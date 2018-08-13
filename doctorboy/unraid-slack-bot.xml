@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>unraid-slack-bot</Name>
+  <Repository>doctorboy/unraid_bot_slack</Repository>
+  <Registry>https://hub.docker.com/r/doctorboy/unraid_bot_slack:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://hub.docker.com/r/doctorboy/unraid_bot_slack</Project>
+  <Overview>A Slack bot focused for Unraid plataform which can interact with another apps on the system (e.g. present Grafana dashboards on slack channels).</Overview>
+  <Category>Network:Other</Category>
+  <WebUI>https://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL></TemplateURL>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText>Donations</DonateText>
+  <DonateLink/>
+  <Description>&#xD;
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8765</HostPort>
+        <ContainerPort>8765</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/grafana-bot/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8765</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Put your slack client id here</Value>
+      <Name>CLIENT_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Put your client secret here</Value>
+      <Name>CLIENT_SECRET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Put your Grafana user here</Value>
+      <Name>GRAFANA_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Put your Grafana user password here</Value>
+      <Name>GRAFANA_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Insert here the IP:Port of grafana service</Value>
+      <Name>GRAFANA_HTTP</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+</Container>
