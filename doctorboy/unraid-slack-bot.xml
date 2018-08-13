@@ -11,8 +11,8 @@
   <Overview>A Slack bot focused for Unraid plataform which can interact with another apps on the system (e.g. present Grafana dashboards on slack channels).</Overview>
   <Category>Network:Other</Category>
   <WebUI>https://[IP]:[PORT:80]/</WebUI>
-  <TemplateURL></TemplateURL>
-  <Icon></Icon>
+  <TemplateURL>https://raw.githubusercontent.com/doctorboyMP/docker-templates/master/doctorboy/unraid-slack-bot.xml</TemplateURL>
+  <Icon>https://github.com/doctorboyMP/docker-templates/blob/master/doctorboy/images/unraid-slack-bot-icon.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText>Donations</DonateText>
