@@ -6,19 +6,18 @@
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support></Support>
-  <Project>https://hub.docker.com/r/doctorboy/unraid_bot_slack</Project>
+  <Support/>
+  <Project/>
   <Overview>A Slack bot focused for Unraid plataform which can interact with another apps on the system (e.g. present Grafana dashboards on slack channels).</Overview>
-  <Category>Network:Other</Category>
-  <WebUI>https://[IP]:[PORT:80]/</WebUI>
+  <Category/>
+  <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/doctorboyMP/docker-templates/master/doctorboy/unraid-slack-bot.xml</TemplateURL>
-  <Icon>https://github.com/doctorboyMP/docker-templates/blob/master/doctorboy/images/unraid-slack-bot-icon.png?raw=true</Icon>
+  <Icon>https://raw.githubusercontent.com/doctorboyMP/docker-templates/master/doctorboy/images/unraid-slack-bot-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DonateText>Donations</DonateText>
+  <DonateText/>
   <DonateLink/>
-  <Description>&#xD;
-  </Description>
+  <Description>A Slack bot focused for Unraid plataform which can interact with another apps on the system (e.g. present Grafana dashboards on slack channels).</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -31,7 +30,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/grafana-bot/</HostDir>
+      <HostDir>/mnt/user/appdata/unraid-slack-bot</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -53,27 +52,27 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Put your slack client id here</Value>
+      <Value>&lt;Put your slack client id here&gt;</Value>
       <Name>CLIENT_ID</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Put your client secret here</Value>
+      <Value>&lt;Put your client secret here&gt;</Value>
       <Name>CLIENT_SECRET</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Put your Grafana user here</Value>
+      <Value>&lt;Put your Grafana user here&gt;</Value>
       <Name>GRAFANA_USER</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Put your Grafana user password here</Value>
+      <Value>&lt;Put your Grafana user password here&gt;</Value>
       <Name>GRAFANA_PASS</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Insert here the IP:Port of grafana service</Value>
+      <Value>&lt;Insert here the IP:Port of grafana service&gt;</Value>
       <Name>GRAFANA_HTTP</Name>
       <Mode/>
     </Variable>
