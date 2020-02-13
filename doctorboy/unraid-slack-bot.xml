@@ -78,4 +78,14 @@
     </Variable>
   </Environment>
   <Labels/>
+  <Config Name="Host Port 1" Target="8765" Default="" Mode="tcp" Description="Container Port: 8765" Type="Port" Display="always" Required="false" Mask="false">8765</Config>
+  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/unraid-slack-bot</Config>
+  <Config Name="Host Key 1" Target="PGID" Default="100" Mode="" Description="Container Variable: " Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Host Key 2" Target="PUID" Default="99" Mode="" Description="Container Variable: " Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Host Key 3" Target="PORT" Default="8765" Mode="" Description="Container Variable: PORT" Type="Variable" Display="always" Required="true" Mask="false">8765</Config>
+  <Config Name="Host Key 4" Target="CLIENT_ID" Default="" Mode="" Description="Container Variable: CLIENT_ID" Type="Variable" Display="always" Required="true" Mask="false">&lt;Put your slack client id here&gt;</Config>
+  <Config Name="Host Key 5" Target="CLIENT_SECRET" Default="" Mode="" Description="Container Variable: CLIENT_SECRET" Type="Variable" Display="always" Required="true" Mask="false">&lt;Put your client secret here&gt;</Config>
+  <Config Name="Host Key 6" Target="GRAFANA_USER" Default="" Mode="" Description="Container Variable: GRAFANA_USER" Type="Variable" Display="always" Required="false" Mask="false">&lt;Put your Grafana user here&gt;</Config>
+  <Config Name="Host Key 7" Target="GRAFANA_PASS" Default="" Mode="" Description="Container Variable: GRAFANA_PASS" Type="Variable" Display="always" Required="false" Mask="false">&lt;Put your Grafana user password here&gt;</Config>
+  <Config Name="Host Key 8" Target="GRAFANA_HTTP" Default="" Mode="" Description="Container Variable: GRAFANA_HTTP" Type="Variable" Display="always" Required="false" Mask="false">&lt;Insert here the IP:Port of grafana service&gt;</Config>
 </Container>
